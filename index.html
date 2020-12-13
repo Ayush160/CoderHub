@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body{
+			height: 100vh;
+			background-image: linear-gradient(#fff,#c3f5ff);
+		}
+		h1,h3{
+			font-family: cursive;
+			text-align: center;
+		}
+		#btn{
+			border: 2px solid lightgreen;
+			background: lightgreen;
+			margin: 0% 0% 0% 90%;
+			padding: 1% 2% 1% 2%;
+		}
+		#btn:hover{
+			background: lightblue;
+		}
+		main{
+		}
+		#input{
+			width: 95%;
+			font-size: 15px;
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+		}
+	</style>
+	<script type="text/javascript">	
+		window.onload=function(){
+           alert("Hello Coder \nThis online html editor is created by a small group consisting of Ayush , Arpan and Shivansh .\nHope this editor helps You .")
+		}
+          function btnclicked(){
+          	document.write(document.getElementById('input').value);
+          }
+	</script>
+</head>
+<body>
+	<h1><b><u>HTML Editor : By Coder Hub</u></b></h1>
+	<h3>Type Your Code below and click on Run</h3>
+	<main>
+		<button id="btn" onclick="btnclicked()">RUN</button>
+	<div><textarea id="input" cols="50" rows="20"></textarea></div>	
+	</main>	
+</body>
+</html>
